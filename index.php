@@ -47,6 +47,11 @@ $name = $request->get('name', 'World');
 $response = new Response();
 
 $response->setContent('Hello world!');
+$myIp = '127.0.0.1';
+if ($myIp === $request->getClientIp()) {
+    // the client is a known one, so give it some more privilege
+    $response->setContent('Welcome home!');
+}
 $response->setStatusCode(200);
 $response->headers->set('Content-Type', 'text/html');
 
