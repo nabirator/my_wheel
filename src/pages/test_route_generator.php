@@ -13,3 +13,9 @@ echo $generator->generate(
     array('name' => 'Fabien'),
     Routing\Generator\UrlGeneratorInterface::ABSOLUTE_URL
 );
+
+echo '<br/>';
+// outputs ProjectUrlMatcher class.
+$dumper = new Routing\Matcher\Dumper\PhpMatcherDumper($routes);
+
+echo '<pre>' . htmlspecialchars($dumper->dump()) . '</pre>';
