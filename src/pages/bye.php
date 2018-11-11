@@ -1,3 +1,4 @@
-<!-- {sitename}/src/pages/bye.php -->
-<?php ?>
+<?php
+// {sitename}/src/pages/bye.php
+?>
 Goodbye!
