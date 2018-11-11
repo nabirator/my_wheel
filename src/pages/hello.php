@@ -1,6 +1,5 @@
-<?php
-
-// framework/hello.php
-/** @var \Symfony\Component\HttpFoundation\Request $request */
-$name = $request->get('name', 'World');
-$response->setContent(sprintf('Hello %s', htmlspecialchars($name, ENT_QUOTES, 'UTF-8')));
+<!-- {sitename}/src/pages/hello.php -->
+<?php /** @var \Symfony\Component\HttpFoundation\Request $request */
+    $name = $request->get('name', 'World');
+?>
+Hello <?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>

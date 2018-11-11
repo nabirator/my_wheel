@@ -1,4 +1,3 @@
-<?php
-
-// framework/bye.php
-$response->setContent('Goodbye!');
+<!-- {sitename}/src/pages/bye.php -->
+<?php ?>
+Goodbye!
