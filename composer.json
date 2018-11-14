@@ -9,8 +9,6 @@
         "phpunit/phpunit": "^7"
     },
     "autoload": {
-        "psr-4": {
-            "my_wheel\\": "src/"
-        }
+        "psr-4": { "": "src/" }
     }
 }
